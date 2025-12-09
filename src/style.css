@@ -1,0 +1,44 @@
+.marquee {
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.track {
+  display: inline-flex;
+  white-space: nowrap;
+  animation: marquee 60s linear infinite;
+}
+
+.content {
+  font-size: 3rem; /* bisa ganti */
+  font-weight: 800;
+  color: rgba(255, 255, 255, 0.1); /* seperti devraj */
+  padding-right: 2rem; /* jarak antar content */
+  letter-spacing: 2px;
+  pointer-events: none;
+}
+
+@keyframes marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+
+
+.shiny-text {
+  background: linear-gradient(135deg, #ff4dd2, #a855f7, #5b21b6, #ff4dd2);
+  background-size: 200% 100%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  color: transparent;
+  animation: shimmer 5s linear infinite;
+}
+
+@keyframes shimmer {
+  0% {
+    background-position: 200% 0;
+  }
+  100% {
+    background-position: -200% 0;
+  }
+}

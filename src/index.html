@@ -1,0 +1,1004 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link href="./output.css" rel="stylesheet">
+  <link href="./style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/268ca19cdb.js" crossorigin="anonymous"></script>
+</head>
+<body class="font-sans bg-[#131d2e] relative overflow-x-hidden">
+    <div class="absolute inset-0 -z-10 pointer-events-none">
+
+        <!-- Blue Glow -->
+        <div class="
+            absolute top-10 left-5 
+            w-[180px] h-[180px] 
+            sm:w-[260px] sm:h-[260px]
+            md:w-[400px] md:h-[400px]
+            bg-blue-600/40 rounded-full blur-[100px]
+            md:blur-[160px]
+        "></div>
+
+        <!-- Tosca Glow -->
+        <div class="
+            absolute bottom-10 right-5 
+            w-40 h-40 
+            sm:w-[230px] sm:h-[230px]
+            md:w-[350px] md:h-[350px]
+            bg-cyan-400/40 rounded-full blur-[90px]
+            md:blur-[150px]
+        "></div>
+
+        <!-- Purple Glow -->
+        <div class="
+            absolute top-1/2 right-1/4
+            w-[180px] h-[180px] 
+            sm:w-[260px] sm:h-[260px]
+            md:w-[420px] md:h-[420px]
+            bg-purple-500/60 rounded-full blur-[110px]
+            md:blur-[180px]
+        "></div>
+
+        <!-- Gradient Overlay -->
+        <div class="absolute inset-0 
+            bg-linear-to-br from-[#0d1a2d] via-[#0a1120] to-[#0e1330] 
+            opacity-70">
+        </div>
+
+    </div>
+
+    <!-- Navbar -->
+    <nav id="navbar"
+        class="hidden lg:block fixed left-1/2 -translate-x-1/2 
+                w-full max-w-ful
+                backdrop-blur-md z-50
+                transition-all duration-300 ease-in-out transform
+                py-1">
+
+        <div class="max-w-7xl mx-auto px-6 py-2 flex items-center justify-between">
+
+            <!-- KOSONG KIRI (AGAR MENU TETAP CENTER) -->
+            <div class="w-32">
+                <h1 class="text-xl font-medium text-white tracking-wider">
+                    Aryhnr.
+                </h1>
+            </div>
+
+
+
+
+            <!-- CENTER MENU -->
+            <div class="flex items-center gap-4">
+
+                <!-- HOME -->
+                <a href="#home"
+                  class="group gap-2 px-6 py-2 rounded-lg hover:bg-white transition flex items-center">
+                    <svg class="w-5 h-5 text-white group-hover:text-black transition" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path fill="currentColor" d="M240-200h120v-240h240v240h120v-360L480-740 240-560v360Zm-80 80v-480l320-240 320 240v480H520v-240h-80v240H160Zm320-350Z"/></svg>
+                    <span class="text-sm font-medium text-white group-hover:text-black">Home</span>
+                </a>
+
+                <!-- ABOUT -->
+                <a href="#about"
+                  class="group gap-2 px-6 py-2 rounded-lg hover:bg-white transition flex items-center">
+                    <svg class="w-5 h-5 text-white group-hover:text-black transition" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path fill="currentColor" d="M480-480q-66 0-113-47t-47-113q0-66 47-113t113-47q66 0 113 47t47 113q0 66-47 113t-113 47ZM160-160v-112q0-34 17.5-62.5T224-378q62-31 126-46.5T480-440q66 0 130 15.5T736-378q29 15 46.5 43.5T800-272v112H160Zm80-80h480v-32q0-11-5.5-20T700-306q-54-27-109-40.5T480-360q-56 0-111 13.5T260-306q-9 5-14.5 14t-5.5 20v32Zm240-320q33 0 56.5-23.5T560-640q0-33-23.5-56.5T480-720q-33 0-56.5 23.5T400-640q0 33 23.5 56.5T480-560Zm0-80Zm0 400Z"/></svg>
+                    <span class="text-sm font-medium text-white group-hover:text-black">About</span>
+                </a>
+
+                <!-- SKILLS -->
+                <a href="#skills"
+                  class="group gap-2 px-6 py-2 rounded-lg hover:bg-white transition flex items-center">
+                    <svg class="w-5 h-5 text-white group-hover:text-black transition" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path fill="currentColor" d="M220-80q-58 0-99-41t-41-99q0-58 41-99t99-41q18 0 35 4.5t32 12.5l153-153v-110q-44-13-72-49.5T340-740q0-58 41-99t99-41q58 0 99 41t41 99q0 48-28 84.5T520-606v110l154 153q15-8 31.5-12.5T740-360q58 0 99 41t41 99q0 58-41 99t-99 41q-58 0-99-41t-41-99q0-18 4.5-35t12.5-32L480-424 343-287q8 15 12.5 32t4.5 35q0 58-41 99t-99 41Zm520-80q25 0 42.5-17.5T800-220q0-25-17.5-42.5T740-280q-25 0-42.5 17.5T680-220q0 25 17.5 42.5T740-160ZM480-680q25 0 42.5-17.5T540-740q0-25-17.5-42.5T480-800q-25 0-42.5 17.5T420-740q0 25 17.5 42.5T480-680ZM220-160q25 0 42.5-17.5T280-220q0-25-17.5-42.5T220-280q-25 0-42.5 17.5T160-220q0 25 17.5 42.5T220-160Z"/></svg>
+                    <span class="text-sm font-medium text-white group-hover:text-black">Skills</span>
+                </a>
+
+                <!--  -->
+                <a href="#pengalaman"
+                  class="group gap-2 px-6 py-2 rounded-lg hover:bg-white transition flex items-center">
+                    <svg class="w-5 h-5 text-white group-hover:text-black transition" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><!--!Font Awesome Free v7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free Copyright 2025 Fonticons, Inc.--><path fill="currentColor" d="M160 169.3c28.3-12.3 48-40.5 48-73.3 0-44.2-35.8-80-80-80S48 51.8 48 96c0 32.8 19.7 61 48 73.3l0 54.7-64 0c-17.7 0-32 14.3-32 32s14.3 32 32 32l224 0 0 54.7c-28.3 12.3-48 40.5-48 73.3 0 44.2 35.8 80 80 80s80-35.8 80-80c0-32.8-19.7-61-48-73.3l0-54.7 224 0c17.7 0 32-14.3 32-32s-14.3-32-32-32l-64 0 0-54.7c28.3-12.3 48-40.5 48-73.3 0-44.2-35.8-80-80-80s-80 35.8-80 80c0 32.8 19.7 61 48 73.3l0 54.7-256 0 0-54.7z"/></svg>
+                    <span class="text-sm font-medium text-white group-hover:text-black">Experience</span>
+                </a>
+
+                <!-- PROJECTS -->
+                <a href="#projects"
+                  class="group gap-2 px-6 py-2 rounded-lg  hover:bg-white transition flex items-center">
+                    <svg class="w-5 h-5 text-white group-hover:text-black transition" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" ><path fill="currentColor" d="M640-120q-33 0-56.5-23.5T560-200v-160q0-33 23.5-56.5T640-440h160q33 0 56.5 23.5T880-360v160q0 33-23.5 56.5T800-120H640Zm0-80h160v-160H640v160ZM80-240v-80h360v80H80Zm560-280q-33 0-56.5-23.5T560-600v-160q0-33 23.5-56.5T640-840h160q33 0 56.5 23.5T880-760v160q0 33-23.5 56.5T800-520H640Zm0-80h160v-160H640v160ZM80-640v-80h360v80H80Zm640 360Zm0-400Z"/></svg>
+                    <span class="text-sm font-medium text-white group-hover:text-black">Projects</span>
+                </a>
+
+                <!-- CONTACT -->
+                <a href="#contact"
+                  class="group gap-2 px-6 py-2 rounded-lg hover:bg-white transition flex items-center">
+                    <svg class="w-5 h-5 text-white group-hover:text-black transition" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px"><path fill="currentColor" d="M798-120q-125 0-247-54.5T329-329Q229-429 174.5-551T120-798q0-18 12-30t30-12h162q14 0 25 9.5t13 22.5l26 140q2 16-1 27t-11 19l-97 98q20 37 47.5 71.5T387-386q31 31 65 57.5t72 48.5l94-94q9-9 23.5-13.5T670-390l138 28q14 4 23 14.5t9 23.5v162q0 18-12 30t-30 12ZM241-600l66-66-17-94h-89q5 41 14 81t26 79Zm358 358q39 17 79.5 27t81.5 13v-88l-94-19-67 67ZM241-600Zm358 358Z"/></svg>
+                    <span class="text-sm font-medium text-white group-hover:text-black">Contact</span>
+                </a>
+            </div>
+
+            <!-- RIGHT: DOWNLOAD CV BUTTON -->
+            <a id="download" href="images/CV Raihan.pdf" download
+              class="px-5 py-2 bg-white text-black rounded-lg font-medium hover:bg-gray-30 transition">
+                Download CV
+            </a>
+            
+
+        </div>
+    </nav>
+
+    <!-- NAVBAR MOBILE -->
+    <nav class="flex lg:hidden fixed top-0 left-0 w-full bg-[#131d2e]/30 backdrop-blur-lg shadow-md z-50 px-4 py-3 
+                items-center justify-between">
+
+        <span class="font-bold text-lg text-white">Aryhnr.</span>
+
+        <!-- HAMBURGER / CLOSE -->
+        <button id="mobileMenuBtn" class="p-2 transition">
+            <svg id="iconMenu" xmlns="http://www.w3.org/2000/svg" 
+                class="w-7 h-7 text-white transition-all duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M4 6h16M4 12h16M4 18h16"/>
+            </svg>
+
+            <svg id="iconClose" xmlns="http://www.w3.org/2000/svg" 
+                class="w-7 h-7 text-white hidden transition-all duration-300"
+                fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                      d="M6 18L18 6M6 6l12 12"/>
+            </svg>
+        </button>
+    </nav>
+
+
+
+    <!-- SIDEBAR BACKDROP -->
+    <div id="sidebarBackdrop" 
+        class="hidden fixed inset-0 bg-black/40 backdrop-blur-sm z-40 opacity-0 transition-opacity duration-300">
+    </div>
+
+    <!-- SIDEBAR -->
+    <div id="sidebar"
+        class="hidden fixed top-0 left-0 h-full w-72 bg-white shadow-xl z-50
+                p-6 flex-col gap-5 transform -translate-x-full
+                transition-all duration-300">
+
+
+        <h2 class="text-xl font-semibold text-gray-800 mb-4">Menu</h2>
+
+        <a href="#home" class="py-2 text-black font-medium">Home</a>
+        <a href="#about" class="py-2 text-black font-medium">About</a>
+        <a href="#skills" class="py-2 text-black font-medium">Skills</a>
+        <a href="#projects" class="py-2 text-black font-medium">Projects</a>
+        <a href="#contact" class="py-2 text-black font-medium">Contact</a>
+
+        <a href="images/CV Raihan.pdf" download
+          class="mt-3 px-6 py-4 bg-black text-white text-center rounded-xl shadow hover:bg-gray-800 transition">
+          Download CV
+        </a>
+    </div>
+
+
+    <!-- Isi Web -->
+    <!-- HOME SECTION -->
+    <section id="home" class="pt-50 pb-32">
+        <div class="max-w-7xl mx-auto px-auto text-center space-y-6">
+
+            <h1 class="font-extrabold leading-tight
+           text-3xl sm:text-4xl md:text-5xl text-white">
+
+                <span class="text-[#7e1f98] font-sans">Hey there,</span>
+                <span class="text-white">I'm Raihan</span><br>
+
+                <!-- FIX: ruang typing stabil -->
+                <span class="typing-text text-[#029c9f] font-extrabold inline-block min-h-[30px]"></span>
+
+            </h1>
+
+            <p class="text-gray-400 text-lg max-w-2xl mx-auto">
+                Membangun pengalaman digital yang modern dan responsif dengan fokus pada web development serta machine learning.
+            </p>
+
+
+            <div class="flex justify-center gap-4 mt-5 py-7">
+              <div class="relative">
+                  <div class="absolute -inset-5">
+                      <div
+                          class="w-full h-full max-w-sm mx-auto lg:mx-0 opacity-30 blur-lg bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500">
+                      </div>
+                  </div>
+                  <a href="#projects" title=""
+                      class="relative z-10 inline-flex items-center justify-center w-full px-8 py-3 text-lg font-bold text-white transition-all duration-200 bg-gray-900 border-2 border-transparent sm:w-auto rounded-xl font-pj hover:bg-gray-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-gray-900"
+                      role="button">
+                      View Projects <i class="fa-solid fa-arrow-right-long ml-2"></i>
+                  </a>
+              </div>
+
+                <!-- LEARN MORE -->
+                <!-- <a href="#about"
+                  class="px-6 py-3 font-medium text-white rounded-lg flex items-center gap-2
+                          border-2"
+                  style="border-image: linear-gradient(to right, #b317de, #7e1f98) 1;">
+                    Learn More <i class="fa-solid fa-circle-info"></i>
+                </a> -->
+
+            </div>
+            <div class="mt-16 flex justify-center">
+                <div class="animate-bounce text-white  text-3xl opacity-70">
+                    <a href="#about"><i class="fa-regular fa-circle-down" style="color: #b317de;"></i></a>
+                </div>
+            </div>
+
+        </div>
+    </section>
+    <!-- AUTO SCROLL TEXT -->
+    <!-- <div class="relative w-full overflow-hidden py-6"> -->
+
+        <!-- TOP & BOTTOM LINES -->
+        <!-- <div class="absolute top-0 left-0 w-full h-px bg-white/5"></div> -->
+        <!-- <div class="absolute bottom-0 left-0 w-full h-px bg-white/5"></div> -->
+
+        <!-- LEFT SHADOW -->
+        <!-- <div class="pointer-events-none absolute inset-y-0 left-0 w-1/4 bg-linear-to-r from-bg-[#131d2e] to-transparent"></div> -->
+
+
+        <!-- RIGHT SHADOW -->
+        <!-- <div class="pointer-events-none absolute inset-y-0 right-0 w-1/4 bg-linear-to-r from-bg-[#131d2e] to-transparent"></div> -->
+
+
+
+        <!-- MARQUEE -->
+        <!-- <div class="marquee">
+            <div class="track">
+                <div class="content">
+                    Infinite Marquee ✦ Web Developer ✦ Machine Learning ✦ UI/UX ✦ Creative Builder ✦
+                </div>
+                <div class="content">
+                    Infinite Marquee ✦ Web Developer ✦ Machine Learning ✦ UI/UX ✦ Creative Builder ✦
+                </div>
+            </div>
+        </div>
+
+    </div> -->
+
+
+    <section id="about" class="pt-30 pb-20">
+
+        <!-- SECTION TITLE -->
+        <h2 class="text-3xl md:text-4xl font-bold text-white tracking-wide text-center mb-12">
+            <span class="text-[#7e1f98]">{</span>
+            About Me
+            <span class="text-[#7e1f98]">}</span>
+        </h2>
+
+        <div class="max-w-7xl mx-auto px-6 grid md:grid-cols-2 gap-10 items-center">
+            
+            <!-- LEFT IMAGE -->
+            <div class="relative flex justify-center items-center py-7">
+
+                <!-- GRADIENT GLOW BACKGROUND -->
+                <div class="absolute w-60 h-60 md:w-80 md:h-80 rounded-full 
+                            bg-linear-to-br from-[#c600fd] via-purple-500 to-[#00fbff]
+                            blur-2xl opacity-70">
+                </div>
+
+                <!-- GLOSSY RING -->
+                <div class="absolute w-60 h-60 md:w-80 md:h-80 rounded-full
+                            ring-4 ring-white/30 
+                            shadow-[0_0_35px_rgba(255,255,255,0.35)]">
+                </div>
+
+                <!-- FOTO -->
+                <img src="images/gambar1.jpeg"
+                    class="w-60 h-60 md:w-80 md:h-80 rounded-full object-cover relative z-10 shadow-xl">
+
+                <!-- ICON 1 -->
+                <div class="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] z-11 origin-bottom rotate-45">
+                    <img src="images/python.png"
+                        class="w-15 h-15 p-3 object-contain bg-[#006466]/50 border-2 border-dashed border-[#006466] rounded-xl shadow-md -rotate-45">
+                </div>
+
+                <!-- ICON 2 -->
+                <div class="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] z-11 origin-bottom rotate-100">
+                    <img src="images/Tailwind.png"
+                        class="w-15 h-15 p-3 object-contain bg-[#006466]/50 border-2 border-dashed border-[#006466] rounded-xl shadow-md -rotate-100">
+                </div>
+
+                <!-- ICON 3 -->
+                <div class="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] z-11 origin-bottom rotate-230">
+                    <img src="images/Laravel.png"
+                        class="w-15 h-15 p-3 object-contain bg-[#006466]/50 border-2 border-dashed border-[#006466] rounded-xl shadow-md -rotate-230">
+                </div>
+
+                <!-- ICON 4 -->
+                <div class="absolute top-0 left-1/2 h-1/2 -ml-[1.6rem] z-11 origin-bottom rotate-280">
+                    <img src="images/java.png"
+                        class="w-15 h-15 p-3 object-contain bg-[#006466]/50 border-2 border-dashed border-[#006466] rounded-xl shadow-md -rotate-280">
+                </div>
+
+            </div>
+
+            <!-- RIGHT TEXT -->
+            <div class="space-y-6 animate-fade-in">
+
+                <p class="text-gray-400 text-lg leading-relaxed">
+                    Saya membuat pengalaman digital yang modern, clean, dan responsif. 
+                    Spesialisasi dalam frontend, UI/UX, serta pengembangan web berbasis teknologi terbaru.
+                </p>
+
+                <div class="flex gap-4">
+                    
+                    <a href="www.linkedin.com/in/aryhnr"
+                        class="px-6 py-3 bg-linear-to-r from-[#b317de] to-[#7e1f98] text-white font-medium transition flex items-center gap-2">
+                        Let's Connect <i class="fa-solid fa-arrow-up-right-from-square"></i>
+                    </a>
+                    
+                    <a href="mailto:ytminecraft93@gmail.com"
+                        class="px-6 py-3 font-medium text-white transition flex items-center gap-2 rounded-lg"
+                        style="border: 2px solid; border-image: linear-gradient(to right, #b317de, #7e1f98) 1;">
+                        Hire Me <i class="fas fa-envelope"></i>
+                    </a>
+
+                </div>
+                <!-- SOCIAL MEDIA -->
+                <div class="flex items-center gap-4 text-white text-2xl">
+
+                    <!-- Instagram -->
+                    <a href="https://www.instagram.com/_aryhnr/" target="_blank"
+                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
+                        <i class="fab fa-instagram"></i>
+                    </a>
+
+                    <!-- GitHub -->
+                    <a href="https://github.com/Aryhnr" target="_blank"
+                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
+                        <i class="fab fa-github"></i>
+                    </a>
+
+                    <!-- Facebook -->
+                    <a href="https://web.facebook.com/profile.php?id=100009118197017&locale=id_ID" target="_blank"
+                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
+                        <i class="fab fa-facebook"></i>
+                    </a>
+
+                    <!-- Twitter / X -->
+                    <a href="#" target="_blank"
+                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
+                        <i class="fab fa-x-twitter"></i>
+                    </a>
+                </div>
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- SKILLS SECTION -->
+    <section id="skills" class="py-30">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+            <!-- SECTION TITLE -->
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-wide mb-4 inline-block">
+                <span class="text-[#7e1f98]">{ </span>
+                Skills
+                <span class="text-[#7e1f98]"> }</span>
+            </h2>
+            <h3 class="text-xl md:text-2xl font-semibold mb-8 bg-clip-text text-transparent 
+                      bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 shiny-text">
+                Tech Stack & Tools I Use
+            </h3>
+
+
+            <!-- DESCRIPTION -->
+            <p class="text-gray-400 text-lg mb-12 max-w-3xl mx-auto">
+                Berikut adalah beberapa keahlian dan teknologi yang saya kuasai, mulai dari web development, design, hingga data science.
+            </p>
+            <!-- MARQUEE STACK -->
+            <div class="relative w-full flex justify-center my-7">
+
+                <!-- TOP & BOTTOM LINES -->
+                <div class="absolute top-0 left-0 w-full h-px bg-white/20 z-20"></div>
+                <div class="absolute bottom-0 left-0 w-full h-px bg-white/20 z-20"></div>
+
+                <!-- MARQUEE CONTAINER -->
+                <div class="w-full overflow-hidden relative z-10 py-6"
+                    style="background: repeating-linear-gradient(
+                            45deg,
+                            rgba(255,255,255,0.05),
+                            rgba(255,255,255,0.05) 1px,
+                            transparent 1px,
+                            transparent 10px
+                        );">
+
+                    <!-- LEFT & RIGHT SHADOW -->
+                    <div class="pointer-events-none absolute inset-y-0 left-0 w-1/4 
+                                bg-linear-to-r from-[#0e1829] to-transparent z-10"></div>
+
+                    <div class="pointer-events-none absolute inset-y-0 right-0 w-1/4 
+                                bg-linear-to-l from-[#0e1829] to-transparent z-10"></div>
+                    <!-- MARQUEE TRACK -->
+                    <div class="marquee overflow-hidden whitespace-nowrap">
+                      <div class="track flex animate-marquee items-center justify-center space-x-4">
+
+                          <!-- Skill Item -->
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/html.png" alt="HTML" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">HTML</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/css.webp" alt="CSS" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">CSS</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/java.png" alt="JS" class="w-8 h-8 mr-2 rounded-sm">
+                              <span class="text-white font-semibold text-xl">JavaScript</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/php.png" alt="PHP" class="w-8 h-8 mr-2 object-contain">
+                              <span class="text-white font-semibold text-xl">PHP</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/python.png" alt="Python" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Python</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Laravel.png" alt="Laravel" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Laravel</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Tailwind.png" alt="Tailwind" class="w-8 h-8 mr-2 object-contain">
+                              <span class="text-white font-semibold text-xl">Tailwind</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Bootstrap.png" alt="Bootstrap" class="w-8 h-8 mr-2 object-contain">
+                              <span class="text-white font-semibold text-xl">Bootstrap</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Git.png" alt="Git" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Git</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/figma.png" alt="Figma" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Figma</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/mysql.png" alt="MySQL" class="w-8 h-8 mr-2 rounded-sm">
+                              <span class="text-white font-semibold text-xl">MySQL</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/streamlit.png" alt="Streamlit" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Streamlit</span>
+                          </div>
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/tensor.jpg" alt="Tensorflow" class="w-8 h-8 mr-2 object-contain rounded-sm">
+                              <span class="text-white font-semibold text-xl">TensorFlow</span>
+                          </div>
+
+                          <!-- Copy ulang untuk infinite scroll -->
+                           <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/html.png" alt="HTML" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">HTML</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/css.webp" alt="CSS" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">CSS</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/java.png" alt="JS" class="w-8 h-8 mr-2 rounded-sm">
+                              <span class="text-white font-semibold text-xl">JavaScript</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/php.png" alt="PHP" class="w-8 h-8 mr-2 object-contain">
+                              <span class="text-white font-semibold text-xl">PHP</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/python.png" alt="Python" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Python</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Laravel.png" alt="Laravel" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Laravel</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Tailwind.png" alt="Tailwind" class="w-8 h-8 mr-2 object-contain">
+                              <span class="text-white font-semibold text-xl">Tailwind</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Bootstrap.png" alt="Bootstrap" class="w-8 h-8 mr-2 object-contain">
+                              <span class="text-white font-semibold text-xl">Bootstrap</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/Git.png" alt="Git" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Git</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/figma.png" alt="Figma" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Figma</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/mysql.png" alt="MySQL" class="w-8 h-8 mr-2 rounded-sm">
+                              <span class="text-white font-semibold text-xl">MySQL</span>
+                          </div>
+
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/streamlit.png" alt="Streamlit" class="w-8 h-8 mr-2">
+                              <span class="text-white font-semibold text-xl">Streamlit</span>
+                          </div>
+                          <div class="flex items-center bg-gray-800/50 backdrop-blur-md rounded-full px-6 py-4 min-w-max">
+                              <img src="images/tensor.jpg" alt="Tensorflow" class="w-8 h-8 mr-2 object-contain rounded-sm">
+                              <span class="text-white font-semibold text-xl">TensorFlow</span>
+                          </div>
+                      </div>
+                  </div>
+                </div>
+
+            </div>
+
+
+
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- EXPERIENCE SECTION -->
+    <section id="pengalaman" class="py-24">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <!-- TOP SECTION: LEFT TEXT + RIGHT STATISTICS -->
+            <div class="grid md:grid-cols-2 gap-10 items-start">
+
+                <!-- LEFT SIDE (TITLE, SUBTITLE, DESCRIPTION) -->
+                <div>
+                    <h2 class="text-3xl md:text-4xl font-bold text-white tracking-wide mb-3">
+                        <span class="text-[#7e1f98]">{</span>
+                        Experience
+                        <span class="text-[#7e1f98]">}</span>
+                    </h2>
+
+                    <h3 class="text-xl md:text-2xl font-semibold mb-6
+                            bg-clip-text text-transparent
+                            bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500
+                            shiny-text">
+                        My Professional Journey
+                    </h3>
+
+                    <p class="text-gray-400 text-lg max-w-xl">
+                        Ringkasan pengalaman profesional yang telah saya jalani, mulai dari magang, 
+                        proyek independen, hingga pengembangan aplikasi web secara end-to-end.
+                    </p>
+                </div>
+
+                <!-- RIGHT SIDE (3 STAT BOXES INLINE) -->
+                <div class="grid grid-cols-3 gap-4 text-center">
+                    <!-- BOX 1 -->
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+                        <h3 class="text-3xl font-bold text-white">15+</h3>
+                        <p class="text-gray-400 text-sm mt-1">Completed Projects</p>
+                        <p class="text-gray-500 text-xs mt-1">Total Projects</p>
+                    </div>
+
+                    <!-- BOX 2 -->
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+                        <h3 class="text-3xl font-bold text-white">10+</h3>
+                        <p class="text-gray-400 text-sm mt-1">Xlients & Collaborations</p>
+                        <p class="text-gray-500 text-xs mt-1">Clients / Users</p>
+                    </div>
+
+                    <!-- BOX 3 -->
+                    <div class="p-5 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm text-center">
+                        <h3 class="text-3xl font-bold text-white">12+</h3>
+                        <p class="text-gray-400 text-sm mt-1">Technologies Mastered</p>
+                        <p class="text-gray-500 text-xs mt-1">Tech Stack Used</p>
+                    </div>
+                </div>
+
+            </div>
+            <!-- Card Experience -->
+            <div class="mt-16 space-y-8">
+              <div id="experience-wrapper" class="grid md:grid-cols-3 gap-8">
+
+                  <!-- CARD 1 -->
+                  <div class="experience-card relative p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <span class="absolute top-4 right-4 text-xs text-gray-400 font-medium">Jul 2024 — Okt 2024</span>
+                    <span class="absolute bottom-4 right-4 text-indigo-400 text-lg opacity-80 
+                                transition-all duration-200 hover:opacity-100 hover:scale-110 
+                                hover:text-indigo-300 cursor-pointer">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                    <img src="images/diskominfo.jpg" class="w-20 h-20 mb-4 rounded-sm" alt="Company Logo">
+                    <h4 class="text-xl font-semibold text-white">Web Developer</h4>
+                    <p class="text-gray-400 text-sm mt-1">Diskominfo Bangkalan</p>
+                    <p class="text-gray-300 text-sm mt-3">Mengembangkan website live streaming radio lengkap dengan halaman profil serta fitur pemutar audio real-time.</p>
+                    <p class="text-sm font-semibold mt-4 flex items-center gap-2">
+                      <i class="fa-solid fa-circle-check text-green-400"></i>
+                      <span class="text-gray-300">Selesai</span>
+                    </p>
+
+                  </div>
+                  <div class="experience-card relative p-6 rounded-xl bg-white/5 border border-white/10 backdrop-blur-sm">
+                    <span class="absolute top-4 right-4 text-xs text-gray-400 font-medium">Nov 2025 — Sekarang</span>
+                    <span class="absolute bottom-4 right-4 text-indigo-400 text-lg opacity-80 
+                                transition-all duration-200 hover:opacity-100 hover:scale-110 
+                                hover:text-indigo-300 cursor-pointer">
+                        <i class="fa-solid fa-download"></i>
+                    </span>
+
+                    <i class="fa-solid fa-people-group text-7xl text-gray-300 mb-4"></i>
+                    <h4 class="text-xl font-semibold text-white">Frontend Developer</h4>
+                    <p class="text-gray-400 text-sm mt-1">Freelance</p>
+                    <p class="text-gray-300 text-sm mt-3">Frontend Developer dalam tim freelance, fokus membuat tampilan website yang modern, cepat, dan responsif.</p>
+                    <p class="text-sm font-semibold mt-4 flex items-center gap-2">
+                      <i class="fa-solid fa-spinner animate-spin text-yellow-400"></i>
+                      <span class="text-gray-300">Sedang Berjalan</span>
+                    </p>
+
+                  </div>
+
+              </div>
+
+
+              <!-- SHOW MORE BUTTON -->
+              <div class="text-center mt-8">
+                  <button id="show-more-btn"
+                      class="px-6 py-3 rounded-xl bg-gray-800 hover:bg-gray-700 text-white font-semibold transition">
+                      Show More
+                  </button>
+              </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+
+
+
+
+    <!-- PROJECTS SECTION -->
+    <section id="projects" class="py-24 ">
+
+        <div class="max-w-7xl mx-auto px-6 text-center">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-wide mb-4">
+                <span class="text-[#7e1f98]">{</span>
+                Projects
+                <span class="text-[#7e1f98]">}</span>
+            </h2>
+
+            <h3 class="text-xl md:text-2xl font-semibold mb-8 bg-clip-text text-transparent 
+                      bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 shiny-text">
+                A Collection of My Recent Projects
+            </h3>
+
+            <p class="text-gray-400 text-lg mb-12 max-w-3xl mx-auto">
+                Beberapa proyek yang pernah saya kerjakan dalam bidang web development dan teknologi.
+                <br>
+                Lihat lebih banyak di 
+                <a href="https://github.com/Aryhnr" target="_blank" 
+                  class="text-[#7e1f98] font-semibold transition-all duration-300 hover:text-[#029c9f] hover:scale-105">
+                  GitHub saya.
+                </a>
+            </p>
+
+
+
+
+            <div class="grid md:grid-cols-3 gap-10" id="project-list">
+
+                <!-- CARD 1 -->
+                <div class="project-card bg-[#0f172a] rounded-xl p-5 shadow-lg 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300
+                  w-full h-auto">
+                    
+                    <img src="images/sbfm.png" 
+                        class="w-full h-55 object-cover rounded-sm" alt="Project 1">
+
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-white mb-2">Radio Streaming Website</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Website live radio dengan fitur pemutar audio real-time dan dashboard admin.
+                        </p>
+
+                        <!-- STACK -->
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 text-xs bg-rose-600/20 text-rose-400 rounded-full">Laravel</span>
+                            <span class="px-3 py-1 text-xs bg-indigo-600/20 text-indigo-400 rounded-full">Bootstrap</span>
+                            <span class="px-3 py-1 text-xs bg-yellow-600/20 text-yellow-400 rounded-full">JavaScript</span>
+                        </div>
+
+                        <a href="https://sbfm.bangkalankab.go.id/" class="inline-block px-4 py-2 text-sm text-white bg-indigo-600 
+                                        rounded-lg hover:bg-indigo-500 transition-all">
+                            Visit Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 2 -->
+                <div class="project-card bg-[#0f172a] rounded-xl p-5 shadow-lg 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300
+                  w-full h-auto">
+                    
+                    <img src="images/se.png" 
+                        class="w-full h-55 object-cover rounded-sm" alt="Project 2">
+
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-white mb-2">Search Engine Berbasis Similarity</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Sistem pencarian berita menggunakan pendekan similarity (Cosine Similarity, BM25, dan BM25+)
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 text-xs bg-yellow-600/20 text-yellow-400 rounded-full">Python</span>
+                            <span class="px-3 py-1 text-xs bg-red-500/20 text-red-400 rounded-full">Streamlit</span>
+                        </div>
+
+
+                        <a href="https://searchengineberbasissimilarity.streamlit.app/" class="inline-block px-4 py-2 text-sm text-white bg-indigo-600 
+                                        rounded-lg hover:bg-indigo-500 transition-all">
+                            Visit Project
+                        </a>
+                    </div>
+                </div>
+
+                <!-- CARD 3 -->
+                <div class="project-card bg-[#0f172a] rounded-xl p-5 shadow-lg 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300
+                  w-full h-auto">
+                    
+                    <img src="images/tumor.png" 
+                        class="w-full h-55 object-cover rounded-sm" alt="Project 3">
+
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-white mb-2">Brain Tumor Classification</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Model klasifikasi tumor otak menggunakan teknik ensemble ResNet50 dan DenseNet121 untuk meningkatkan akurasi deteksi.
+                        </p>
+
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <div class="flex flex-wrap gap-2 mb-5">
+                                <span class="px-3 py-1 text-xs bg-yellow-600/20 text-yellow-400 rounded-full">Python</span>
+                                <span class="px-3 py-1 text-xs bg-blue-600/20 text-blue-400 rounded-full">TensorFlow</span>
+                            </div>
+
+                        </div>
+
+                        <a href="https://aryhnr-deteksi-tumor-otak-mri.hf.space/" class="inline-block px-4 py-2 text-sm text-white bg-indigo-600 
+                                        rounded-lg hover:bg-indigo-500 transition-all">
+                            Visit Project
+                        </a>
+                    </div>
+                </div>
+                <div class="project-card bg-[#0f172a] rounded-xl p-5 shadow-lg 
+                  hover:-translate-y-1 hover:shadow-xl transition-all duration-300
+                  w-full h-auto">
+                    
+                    <img src="https://via.placeholder.com/600x400" 
+                        class="w-full h-44 object-cover" alt="Project 3">
+
+                    <div class="p-6 text-left">
+                        <h3 class="text-xl font-semibold text-white mb-2">E-Commerce Mini System</h3>
+                        <p class="text-gray-400 text-sm mb-4">
+                            Sistem e-commerce sederhana dengan cart, kategori produk, dan admin CRUD.
+                        </p>
+
+                        <div class="flex flex-wrap gap-2 mb-5">
+                            <span class="px-3 py-1 text-xs bg-green-600/20 text-green-400 rounded-full">Vue.js</span>
+                            <span class="px-3 py-1 text-xs bg-slate-600/20 text-slate-400 rounded-full">API</span>
+                        </div>
+
+                        <a href="#" class="inline-block px-4 py-2 text-sm text-white bg-indigo-600 
+                                        rounded-lg hover:bg-indigo-500 transition-all">
+                            Visit Project
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+            <div class="text-center mt-10">
+                <button id="show-more-projects"
+                        class="px-6 py-3 bg-gray-800 text-white rounded-lg hover:bg-gray-700 
+                              transition-all">
+                    Show More Projects
+                </button>
+            </div>
+
+
+
+        </div>
+
+    </section>
+
+
+
+    <!-- CONTACT SECTION -->
+    <section id="contact" class="py-24 ">
+
+        <div class="max-w-7xl mx-auto px-6">
+
+            <h2 class="text-3xl md:text-4xl font-bold text-white tracking-wide mb-4 text-center">
+                <span class="text-[#7e1f98]">{</span>
+                Contact 
+                <span class="text-[#7e1f98]">}</span>
+            </h2>
+            <h3 class="text-xl md:text-2xl font-semibold mb-8 bg-clip-text text-transparent 
+                      bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500 shiny-text text-center">
+                Let’s Start a Conversation
+            </h3>
+
+          <div class="grid md:grid-cols-2 gap-10 mt-10">
+
+              <!-- LEFT CONTACT INFO -->
+              <div class="space-y-6">
+                <p class="text-gray-400 text-lg mb-12 max-w-3xl mx-auto">
+                    Selalu terbuka untuk peluang baru, kolaborasi proyek, atau sekadar berdiskusi seputar teknologi dan pengembangan web. Jangan ragu untuk menghubungi saya kapan saja.
+                </p>
+
+                <!-- Address -->
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center 
+                                bg-white/5 border border-white/10 rounded-sm
+                                text-[#7e1f98] text-lg shadow-md shadow-[#7e1f98]/10">
+                        <i class="fa-solid fa-location-dot"></i>
+                    </div>
+                    <p class="text-gray-300 leading-relaxed">
+                        DSN Lonpao Dajah, Desa Blaban, Kec. Batumarmar, Kab. Pamekasan
+                    </p>
+                </div>
+
+                <!-- Phone -->
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center 
+                                bg-white/5 border border-white/10 rounded-sm
+                                text-[#7e1f98] text-lg shadow-md shadow-[#7e1f98]/10">
+                        <i class="fa-solid fa-phone"></i>
+                    </div>
+                    <p class="text-gray-300">
+                        +62 895-3051-6187
+                    </p>
+                </div>
+
+                <!-- Email -->
+                <div class="flex items-center gap-4">
+                    <div class="w-10 h-10 flex items-center justify-center 
+                                bg-white/5 border border-white/10 rounded-sm
+                                text-[#7e1f98] text-lg shadow-md shadow-[#7e1f98]/10">
+                        <i class="fa-solid fa-envelope"></i>
+                    </div>
+                    <p class="text-gray-300">
+                        ytminecraft93@gmail.com
+                    </p>
+                </div>
+              </div>
+
+              <!-- RIGHT CONTACT FORM -->
+              <div class="max-w-xl space-y-6">
+
+                <form action="https://formspree.io/f/xwpgnawd" method="POST" class="space-y-4">
+
+                    <div>
+                        <label class="text-gray-300 text-sm">Nama</label>
+                        <input type="text" name="name"
+                            class="w-full mt-1 p-3 rounded-lg bg-white/5 border border-white/10 text-gray-200"
+                            placeholder="Nama lengkap..." required>
+                    </div>
+
+                    <div>
+                        <label class="text-gray-300 text-sm">Email</label>
+                        <input type="email" name="email"
+                            class="w-full mt-1 p-3 rounded-lg bg-white/5 border border-white/10 text-gray-200"
+                            placeholder="Email aktif..." required>
+                    </div>
+
+                    <div>
+                        <label class="text-gray-300 text-sm">Pesan</label>
+                        <textarea rows="4" name="message"
+                            class="w-full mt-1 p-3 rounded-lg bg-white/5 border border-white/10 text-gray-200"
+                            placeholder="Tulis pesan kamu di sini..." required></textarea>
+                    </div>
+
+                    <button class="px-6 py-3 bg-[#7e1f98] hover:bg-[#9a26bd] transition font-semibold rounded-lg text-white">
+                        Kirim Pesan
+                    </button>
+
+                </form>
+
+
+              </div>
+
+          </div>
+
+
+        </div>
+
+    </section>
+
+
+
+
+    <!-- Footer -->
+    <footer class="relative mt-20 py-10 text-center">
+
+        <!-- Top Border Glow -->
+        <div class="absolute top-0 left-1/2 -translate-x-1/2 w-3/4 h-px 
+                    bg-linear-to-r from-transparent via-[#7e1f98] to-transparent"></div>
+
+        <div class="max-w-4xl mx-auto space-y-6">
+
+            <!-- SOCIAL ICONS -->
+            <div class="flex justify-center gap-6 text-2xl">
+                <a href="#" 
+                  class="text-gray-400 hover:text-white transition-all duration-200 hover:scale-110 
+                          hover:drop-shadow-[0_0_8px_#7e1f98]">
+                    <i class="fa-brands fa-instagram"></i>
+                </a>
+
+                <!-- GitHub -->
+                <a href="#" 
+                  class="text-gray-400 hover:text-white transition-all duration-200 hover:scale-110 
+                          hover:drop-shadow-[0_0_8px_#7e1f98]">
+                    <i class="fa-brands fa-github"></i>
+                </a>
+
+                <!-- LinkedIn -->
+                <a href="#" 
+                  class="text-gray-400 hover:text-white transition-all duration-200 hover:scale-110 
+                          hover:drop-shadow-[0_0_8px_#7e1f98]">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+
+                <!-- Email -->
+                <a href="mailto:your@email.com" 
+                  class="text-gray-400 hover:text-white transition-all duration-200 hover:scale-110 
+                          hover:drop-shadow-[0_0_8px_#7e1f98]">
+                    <i class="fa-solid fa-envelope"></i>
+                </a>
+
+            </div>
+
+            <!-- COPYRIGHT -->
+            <p class="text-gray-500 text-sm">
+                © <span id="year"></span><span class="text-[#7e1f98] font-semibold ml-2">AryhnrPortfolio</span>. All rights reserved.
+            </p>
+
+        </div>
+    </footer>
+
+
+
+
+
+    <script src="script.js"></script>
+
+</body>
+</html>
