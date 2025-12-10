@@ -212,3 +212,350 @@ projectBtn.addEventListener('click', () => {
 
 document.getElementById("year").textContent = new Date().getFullYear();
 
+
+
+
+document.addEventListener("DOMContentLoaded", () => {
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* ============================
+       HOME SECTION ANIMATION
+       ============================ */
+    
+    // Judul utama
+    gsap.from(".home-title", {
+        opacity: 0,
+        y: 40,
+        duration: 1.2,
+        ease: "power3.out"
+    });
+
+    // Setiap span judul
+    gsap.from(".title-part", {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        delay: 0.2,
+        stagger: 0.15,
+        ease: "power3.out"
+    });
+
+    // Paragraf home
+    gsap.from(".home-subtext", {
+        opacity: 0,
+        y: 30,
+        duration: 1.2,
+        delay: 0.5,
+        ease: "power3.out"
+    });
+
+    // Tombol home
+    gsap.from(".home-btn-container", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 1.1,
+        delay: 0.8,
+        ease: "back.out(1.7)"
+    });
+
+    // Ikon scroll home
+    gsap.from(".home-scroll", {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        delay: 1.1,
+        ease: "power2.out"
+    });
+
+    /* ============================
+       ABOUT SECTION ANIMATION
+       ============================ */
+
+    const tl = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#about",
+            start: "top 80%"
+        }
+    });
+
+    // Foto
+    tl.from(".about-photo", {
+        scale: 0.7,
+        opacity: 0,
+        duration: 1.2,
+        ease: "power3.out"
+    });
+
+    // Glow
+    tl.from(".about-glow", {
+        opacity: 0,
+        scale: 0.5,
+        duration: 1,
+        ease: "power2.out"
+    }, "-=1");
+
+    // Ring glossy
+    tl.from(".about-ring", {
+        opacity: 0,
+        rotate: 80,
+        duration: 1.2,
+        ease: "power2.out"
+    }, "-=1");
+
+    // Icon skill
+    tl.from(".about-icon", {
+        opacity: 0,
+        y: -40,
+        rotate: 60,
+        duration: 1,
+        stagger: 0.2,
+        ease: "back.out(1.7)"
+    }, "-=0.8");
+
+    // Text kanan
+    tl.from(".about-text p", {
+        x: 40,
+        opacity: 0,
+        duration: 1,
+        ease: "power3.out"
+    }, "-=0.5");
+
+    // Tombol kanan
+    tl.fromTo(".about-btn",
+        { opacity: 0, y: 20 },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.2,
+            ease: "power2.out"
+        }
+    );
+
+
+    // Sosial media
+    tl.fromTo(".about-social",
+        { opacity: 0, y: 20 },
+        {
+            opacity: 1,
+            y: 0,
+            duration: 0.8,
+            stagger: 0.15,
+            ease: "power2.out"
+        }
+    );
+
+
+    // Ring animasi berputar infinite
+    gsap.to(".about-ring", {
+        rotate: 360,
+        duration: 25,
+        repeat: -1,
+        ease: "linear"
+    });
+    // TIMELINE SKILLS SECTION
+    const skillsTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#skills",
+            start: "top 80%", // mulai animasi saat top section muncul di 80% viewport
+        }
+    });
+
+    // Fade-in judul utama
+    skillsTL.from("#skills h2", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // Fade-in subtitle
+    skillsTL.from("#skills h3", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power3.out"
+    }, "-=0.6"); // overlap dengan judul
+
+    // Fade-in paragraf
+    skillsTL.from("#skills p", {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: "power2.out"
+    }, "-=0.6");
+
+    // Marquee stack masuk dari kiri
+    skillsTL.from(".marquee .track", {
+        x: "-100%", // start dari kiri
+        opacity: 0.5,
+        duration: 1.5,
+        ease: "power2.out"
+    }, "-=0.5");
+
+    // Optional: shimmer / glow untuk teks subtitle
+    gsap.to("#skills h3", {
+        backgroundPosition: "200% 0%",
+        duration: 3,
+        repeat: -1,
+        ease: "linear"
+    });
+    
+    const expTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#pengalaman",
+            start: "top 80%",
+        }
+    });
+
+    // Fade-in judul
+    expTL.from("#pengalaman h2", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // Fade-in subtitle
+    expTL.from("#pengalaman h3", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power3.out"
+    }, "-=0.6");
+
+    // Fade-in paragraf
+    expTL.from("#pengalaman p", {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: "power2.out"
+    }, "-=0.6");
+
+    // Animasi 3 stats box
+    expTL.from("#pengalaman .grid.grid-cols-3 > div", {
+        opacity: 0,
+        y: 40,
+        scale: 0.8,
+        duration: 1,
+        stagger: 0.2,
+        ease: "back.out(1.5)"
+    }, "-=0.5");
+
+    // Animasi card experience
+    expTL.from("#experience-wrapper .experience-card", {
+        opacity: 0,
+        y: 50,
+        scale: 0.9,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out"
+    }, "-=0.5");
+
+    // Optional: hover animasi download icon tetap jalan
+    gsap.to("#experience-wrapper .experience-card span i", {
+        scale: 1.1,
+        repeat: -1,
+        yoyo: true,
+        duration: 1.5,
+        ease: "power1.inOut",
+        paused: true,
+        scrollTrigger: {
+            trigger: "#pengalaman",
+            start: "top 80%",
+        }
+    });
+    const projectsTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#projects",
+            start: "top 80%",
+        }
+    });
+
+    // Fade-in judul
+    projectsTL.from("#projects h2", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // Fade-in subtitle
+    projectsTL.from("#projects h3", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power3.out"
+    }, "-=0.6");
+
+    // Fade-in paragraph
+    projectsTL.from("#projects p", {
+        opacity: 0,
+        y: 20,
+        duration: 1,
+        ease: "power2.out"
+    }, "-=0.6");
+
+    // Animasi project cards
+    projectsTL.from("#project-list", {
+        opacity: 0,
+        y: 50,
+        scale: 0.9,
+        duration: 1,
+        stagger: 0.2,
+        ease: "power3.out"
+    }, "-=0.5");
+
+    const contactTL = gsap.timeline({
+        scrollTrigger: {
+            trigger: "#contact",
+            start: "top 80%",
+        }
+    });
+
+    // Fade-in judul
+    contactTL.from("#contact h2", {
+        opacity: 0,
+        y: 40,
+        duration: 1,
+        ease: "power3.out"
+    });
+
+    // Fade-in subtitle
+    contactTL.from("#contact h3", {
+        opacity: 0,
+        y: 30,
+        duration: 1,
+        ease: "power3.out"
+    }, "-=0.6");
+
+    // Fade-in contact info (left)
+    contactTL.from("#contact .grid > div:first-child .flex", {
+        opacity: 0,
+        x: -40,
+        duration: 0.8,
+        stagger: 0.2,
+        ease: "power2.out"
+    }, "-=0.5");
+
+    // Fade-in contact form (right)
+    contactTL.from("#contact .grid > div:last-child form > div", {
+        opacity: 0,
+        y: 20,
+        duration: 0.8,
+        stagger: 0.15,
+        ease: "power2.out"
+    }, "-=0.4");
+
+    // Fade-in submit button
+    contactTL.from("#contact button", {
+        opacity: 0,
+        scale: 0.8,
+        duration: 0.8,
+        ease: "back.out(1.7)"
+    }, "-=0.4");
+
+
+});
+
