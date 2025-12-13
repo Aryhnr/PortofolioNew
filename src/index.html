@@ -7,6 +7,7 @@
   <link href="./style.css" rel="stylesheet">
   <script src="https://kit.fontawesome.com/268ca19cdb.js" crossorigin="anonymous"></script>
   <link rel="icon" href="images/icontap.png" type="image/png">
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
 </head>
 <body class="font-sans bg-[#131d2e] relative overflow-x-hidden">
     <div class="absolute inset-0 -z-10 pointer-events-none">
@@ -310,57 +311,114 @@
                     <img src="images/java.png"
                         class="about-icon w-15 h-15 p-3 object-contain bg-[#006466]/50 border-2 border-dashed border-[#006466] rounded-xl shadow-md -rotate-280">
                 </div>
+                <!-- BADGE WRAPPER -->
+                <div class="absolute bottom-0 mt-5 z-30 w-full flex justify-center gap-5">
+                    <!-- BADGE 1 -->
+                    <div class="badge-float relative px-5 py-2
+                                text-sm font-semibold text-white
+                                flex items-center gap-2
+                                rounded-full
+                                bg-linear-to-r from-white/30 to-white/10
+                                shadow-[0_0_25px_rgba(255,255,255,0.25)]
+                                hover:scale-105 transition
+                                badge-gradient-border">
+                        🌍 Tech Explorer
+                    </div>
 
+                    <!-- BADGE 2 -->
+                    <div class="badge-float delay-200 relative px-5 py-2
+                                text-sm font-semibold text-white
+                                flex items-center gap-2
+                                rounded-full
+                                bg-linear-to-r from-[#c600fd]/40 to-[#00fbff]/40
+                                shadow-[0_0_30px_rgba(0,251,255,0.45)]
+                                hover:scale-105 transition
+                                badge-gradient-border">
+                        ⚙️ Code Crafter
+                    </div>
+                </div>
+                
             </div>
+            
 
             <!-- RIGHT TEXT -->
             <div class="about-text space-y-6 animate-fade-in">
+                <!-- Heading -->
+                <h2 class="text-1xl md:text-2xl font-bold text-white leading-tight">
+                    Web Developer &
+                    <span class="text-[#00fbff]">Machine Learning Engineer</span>
+                </h2>
 
-                <p class="text-gray-400 text-lg leading-relaxed">
-                    Saya membuat pengalaman digital yang modern, clean, dan responsif. 
-                    Spesialisasi dalam frontend, UI/UX, serta pengembangan web berbasis teknologi terbaru.
+
+                <!-- Description -->
+                <p class="text-slate-300 text-lg leading-relaxed">
+                    Hi, I'm <span class="text-transparent bg-clip-text bg-linear-to-r from-pink-500 via-purple-500 to-indigo-500">Akh. Raihan Gimnastiar Rakhman</span> seorang <span class="text-[#00fbff] font-medium">Web Developer</span> yang fokus membangun website modern, cepat, dan responsif. 
+                    Saya juga tertarik dengan <span class="text-[#00fbff] font-medium">Machine Learning</span> untuk solusi berbasis data. 
+                    Saat ini terbuka untuk freelance & kolaborasi.
                 </p>
 
                 <div class="flex gap-4 about-btn">
-                    
-                    <a href="www.linkedin.com/in/aryhnr"
-                        class="px-6 py-3 bg-linear-to-r from-[#b317de] to-[#7e1f98] text-white font-medium transition flex items-center gap-2">
-                        Let's Connect <i class="fa-solid fa-arrow-up-right-from-square"></i>
+
+                    <a href="https://www.linkedin.com/in/aryhnr"
+                        class="px-6 py-3 rounded-xl
+                        bg-linear-to-r from-[#b317de] to-[#7e1f98]
+                        text-white font-semibold
+                        flex items-center gap-2
+                        shadow-[0_0_25px_rgba(179,23,222,0.45)]
+                        transition-all duration-300
+                        hover:scale-105 hover:shadow-[0_0_40px_rgba(179,23,222,0.7)]">
+                        Let's Connect
+                        <i class="fa-solid fa-arrow-up-right-from-square text-sm"></i>
                     </a>
-                    
+
                     <a href="mailto:ytminecraft93@gmail.com"
-                        class="px-6 py-3 font-medium text-white transition flex items-center gap-2 rounded-lg"
-                        style="border: 2px solid; border-image: linear-gradient(to right, #b317de, #7e1f98) 1;">
-                        Hire Me <i class="fas fa-envelope"></i>
+                        class="px-6 py-3 rounded-xl
+                        text-white font-semibold
+                        flex items-center gap-2
+                        border border-white/20
+                        backdrop-blur-md
+                        transition-all duration-300
+                        hover:border-[#b317de] hover:shadow-[0_0_25px_rgba(179,23,222,0.4)]">
+                        Hire Me
+                        <i class="fas fa-envelope text-sm"></i>
                     </a>
 
                 </div>
-                <!-- SOCIAL MEDIA -->
-                <div class="about-social flex items-center gap-4 text-white text-2xl">
 
-                    <!-- Instagram -->
-                    <a href="https://www.instagram.com/_aryhnr/" target="_blank"
-                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
-                        <i class="fab fa-instagram"></i>
-                    </a>
 
-                    <!-- GitHub -->
-                    <a href="https://github.com/Aryhnr" target="_blank"
-                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
-                        <i class="fab fa-github"></i>
-                    </a>
+                <!-- Cards -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-4">
 
-                    <!-- Facebook -->
-                    <a href="https://web.facebook.com/profile.php?id=100009118197017&locale=id_ID" target="_blank"
-                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
-                        <i class="fab fa-facebook"></i>
-                    </a>
+                    <!-- Web Dev -->
+                    <div class="px-5 py-4 rounded-xl
+                        bg-linear-to-br from-white/10 to-white/5
+                        border border-white/10
+                        text-white
+                        backdrop-blur-md
+                        shadow-[0_0_30px_rgba(179,23,222,0.25)]
+                        transition duration-300 hover:scale-[1.03] web">
 
-                    <!-- Twitter / X -->
-                    <a href="#" target="_blank"
-                    class="p-3 w-15 h-15 text-center rounded-lg bg-white/10 hover:bg-white/20 transition shadow-md">
-                        <i class="fab fa-x-twitter"></i>
-                    </a>
+                        🌐 <span class="font-semibold">Web Development</span>
+                        <p class="text-sm text-slate-300 mt-1">
+                            Frontend • Backend • API
+                        </p>
+                    </div>
+
+                    <!-- ML -->
+                    <div class="px-5 py-4 rounded-xl
+                        bg-linear-to-br from-white/10 to-white/5
+                        border border-white/10
+                        text-white
+                        backdrop-blur-md
+                        shadow-[0_0_30px_rgba(0,251,255,0.25)]
+                        transition duration-300 hover:scale-[1.03] web">
+
+                        🧠 <span class="font-semibold">Machine Learning</span>
+                        <p class="text-sm text-slate-300 mt-1">
+                            Python • Model Training • Data
+                        </p>
+                    </div>
+
                 </div>
             </div>
 

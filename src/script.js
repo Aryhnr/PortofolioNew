@@ -314,24 +314,15 @@ document.addEventListener("DOMContentLoaded", () => {
     }, "-=0.8");
 
     // Text kanan
-    tl.from(".about-text p", {
+    tl.from(".about-text", {
         x: 40,
         opacity: 0,
         duration: 1,
         ease: "power3.out"
     }, "-=0.5");
 
-    // Tombol kanan
-    tl.fromTo(".about-btn",
-        { opacity: 0, y: 20 },
-        {
-            opacity: 1,
-            y: 0,
-            duration: 0.8,
-            stagger: 0.2,
-            ease: "power2.out"
-        }
-    );
+
+
 
 
     // Sosial media
