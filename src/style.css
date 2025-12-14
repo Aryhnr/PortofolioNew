@@ -52,62 +52,62 @@
   }
 }
 
-.badge-icon {
-  box-shadow: 0 0 18px rgba(0, 251, 255, 0.35);
+@keyframes floatY {
+  0% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(-12px);
+  }
+  100% {
+    transform: translateY(0);
+  }
 }
-
 
 .badge-float {
-  animation: float 3s ease-in-out infinite;
+  animation: floatY 6s ease-in-out infinite;
+}
+.focus-card:hover {
+  box-shadow: 0 0 60px rgba(0, 251, 255, 0.25);
+}
+.social-pill {
+  padding: 8px 14px;
+  border-radius: 999px;
+  font-size: 14px;
+  background: rgba(255,255,255,0.06);
+  border: 1px solid rgba(255,255,255,0.15);
+  transition: all .25s ease;
 }
 
-.badge-float.delay-200 {
-  animation-delay: 0.2s;
+.social-pill:hover {
+  transform: translateY(-2px);
 }
 
-.badge-gradient-border {
-  position: relative;
-  background-clip: padding-box;
+.linkedin:hover {
+  border-color: #0a66c2;
+  box-shadow: 0 0 18px rgba(10,102,194,.4);
 }
 
-.badge-gradient-border::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  padding: 1.5px; /* tebal border */
-  border-radius: inherit;
-  background: linear-gradient(135deg, #c600fd, #00fbff);
-  -webkit-mask:
-    linear-gradient(#000 0 0) content-box,
-    linear-gradient(#000 0 0);
-  -webkit-mask-composite: xor;
-          mask-composite: exclude;
-  pointer-events: none;
+.github:hover {
+  border-color: #ffffff80;
 }
 
-/* glossy shine */
-.badge-gradient-border::after {
-  content: "";
-  position: absolute;
-  inset: 0;
-  border-radius: inherit;
-  background: linear-gradient(
-    120deg,
-    rgba(255,255,255,0.35),
-    rgba(255,255,255,0.05),
-    transparent
-  );
-  opacity: 0.6;
-  pointer-events: none;
+.instagram:hover {
+  border-color: #e1306c;
+  box-shadow: 0 0 18px rgba(225,48,108,.35);
 }
 
-@keyframes gradientMove {
-  0% { background-position: 0% 50%; }
-  100% { background-position: 100% 50%; }
+.email:hover {
+  border-color: #00fbff;
+}
+.social-pill i {
+  transition: transform .25s ease, color .25s ease;
 }
 
-.badge-gradient-border::before {
-  background-size: 200% 200%;
-  animation: gradientMove 6s linear infinite;
+.social-pill:hover i {
+  transform: scale(1.1);
 }
-
+.linkedin:hover i { color: #0a66c2; }
+.github:hover i { color: #ffffff; }
+.instagram:hover i { color: #e1306c; }
+.email:hover i { color: #00fbff; }
