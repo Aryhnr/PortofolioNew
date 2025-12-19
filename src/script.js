@@ -552,3 +552,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
 
 
+const dot = document.getElementById("cursor-dot");
+const ring = document.getElementById("cursor-ring");
+
+window.addEventListener("mousemove", (e) => {
+  dot.style.top = `${e.clientY}px`;
+  dot.style.left = `${e.clientX}px`;
+
+  ring.style.top = `${e.clientY}px`;
+  ring.style.left = `${e.clientX}px`;
+});
