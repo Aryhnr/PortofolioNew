@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://aryhnr-portofolio.vercel.app/sitemap.xml
