@@ -25,6 +25,10 @@
   100% { transform: translateX(-50%); }
 }
 
+.marquee:hover .track {
+  animation-play-state: paused;
+}
+
 
 .shiny-text {
   background: linear-gradient(135deg, #ff4dd2, #a855f7, #5b21b6, #ff4dd2);
